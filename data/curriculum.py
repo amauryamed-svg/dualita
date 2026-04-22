@@ -9,9 +9,17 @@ SECTIONS = [
         "emoji": "👅",
         "mooc": {
             "intro": "Domina el arte de evaluar el chocolate como un experto. En este módulo, aprenderás a decodificar los sabores del cacao desde el origen hasta el paladar.",
+            "recipe_url": "/recipes/guia_cata_profesional.pdf",
             "schedule": [
                 {"period": "Mes 1: Fundamentos", "morning": "08:00 - 12:00 (Teoría de Sentidos)", "afternoon": "14:00 - 18:00 (Práctica de Cata)"},
                 {"period": "Mes 2: Perfilación", "morning": "08:00 - 12:00 (Rueda de Sabores)", "afternoon": "14:00 - 18:00 (Identificación de Origen)"}
+            ],
+            "steps": [
+                "Preparación: Limpieza de paladar con agua tibia y manzana verde.",
+                "Análisis Visual: Evaluación de brillo, color y ausencia de defectos superficiales.",
+                "Análisis Auditivo: Verificación del 'snap' limpio al partir la tableta.",
+                "Fase Olfativa: Identificación de aromas primarios y secundarios.",
+                "Degustación: Fusión lenta en boca y registro del retrogusto."
             ]
         },
         "lessons": [
@@ -46,9 +54,17 @@ SECTIONS = [
         "emoji": "📊",
         "mooc": {
             "intro": "La ciencia exacta detrás de la barra perfecta. Aprende a calcular porcentajes de cacao, manteca y azúcar para crear fórmulas de autor equilibradas.",
+            "recipe_url": "/recipes/manual_formulacion_dualita.pdf",
             "schedule": [
                 {"period": "Mes 1: Matemáticas", "morning": "08:00 - 12:00 (Cálculo de Fórmulas)", "afternoon": "14:00 - 18:00 (Manejo de Porcentajes)"},
                 {"period": "Mes 2: Aplicación", "morning": "08:00 - 12:00 (Formulación de Blancos)", "afternoon": "14:00 - 18:00 (Formulación de Oscuros)"}
+            ],
+            "steps": [
+                "Cálculo Base: Determinación de sólidos de cacao y manteca añadida.",
+                "Equilibrio de Dulzor: Ajuste de azúcar según el perfil del grano.",
+                "Refinado: Tiempo y presión ideal para alcanzar micras óptimas.",
+                "Conchado: Desarrollo de sabor y eliminación de ácidos volátiles.",
+                "Curva de Temperado: Preparación de la cristalización beta."
             ]
         },
         "lessons": [
@@ -83,9 +99,17 @@ SECTIONS = [
         "emoji": "🍬",
         "mooc": {
             "intro": "El arte del detalle. Descubre cómo crear casquillos perfectos, rellenos estables y emulsiones (ganaches) que sorprendan por su textura y brillo.",
+            "recipe_url": "/recipes/recetario_bomboneria_fina.pdf",
             "schedule": [
                 {"period": "Mes 1: Técnica de Casquillos", "morning": "08:00 - 12:00 (Encamisado de Moldes)", "afternoon": "14:00 - 18:00 (Cristalización Controlada)"},
                 {"period": "Mes 2: Rellenos Avanzados", "morning": "08:00 - 12:00 (Emulsiones y Ganaches)", "afternoon": "14:00 - 18:00 (Pralinés y Giandujas)"}
+            ],
+            "steps": [
+                "Limpieza de Moldes: Pulido con algodón para brillo espejo.",
+                "Encamisado: Creación de casquillos finos y uniformes.",
+                "Relleno (Piping): Dosificación precisa de ganaches a 28°C.",
+                "Reposo: Estabilización del relleno por 12-24 horas.",
+                "Sellado: Cierre de la base y desmolde por contracción térmica."
             ]
         },
         "lessons": [
@@ -120,9 +144,17 @@ SECTIONS = [
         "emoji": "🌟",
         "mooc": {
             "intro": "Lleva las tendencias a la realidad artesanal. Crea la famosa barra de pistacho y kataifi usando técnicas de autor para un resultado premium y viral.",
+            "recipe_url": "/recipes/receta_chocolate_dubai.pdf",
             "schedule": [
                 {"period": "Mes 1: Preparación", "morning": "08:00 - 12:00 (Tratamiento de Kataifi)", "afternoon": "14:00 - 18:00 (Elaboración de Pasta Pistacho)"},
                 {"period": "Mes 2: Montaje", "morning": "08:00 - 12:00 (Vaciado de Barras Chunky)", "afternoon": "14:00 - 18:00 (Marketing y ASMR)"}
+            ],
+            "steps": [
+                "Kataifi: Tostado de los fideos en mantequilla clarificada hasta dorado.",
+                "Crema de Pistacho: Elaboración de praliné de pistacho al 100% con chocolate blanco.",
+                "Mezcla Texturas: Combinación del kataifi frío con la crema para mantener crunch.",
+                "Vaciado: Encamisado de moldes profundos (Chunky) con chocolate oscuro.",
+                "Relleno y ASMR: Llenado generoso y sellado final."
             ]
         },
         "lessons": [
@@ -157,9 +189,17 @@ SECTIONS = [
         "emoji": "☕",
         "mooc": {
             "intro": "Tradición y vanguardia en una taza. Aprende a formular chocolates de taza premium y a evolucionar el concepto cultural del 'Migao' con técnicas modernas.",
+            "recipe_url": "/recipes/guia_migao_evolucionado.pdf",
             "schedule": [
                 {"period": "Mes 1: El Origen de la Taza", "morning": "08:00 - 12:00 (Historia y Especias)", "afternoon": "14:00 - 18:00 (Molienda y Texturas)"},
                 {"period": "Mes 2: Evolución Culinaria", "morning": "08:00 - 12:00 (Maridaje con Quesos)", "afternoon": "14:00 - 18:00 (Espumas y Aireados)"}
+            ],
+            "steps": [
+                "Base de Taza: Molienda de licor de cacao con especias seleccionadas.",
+                "Emulsión en Caliente: Batido vigoroso para generar espuma estable.",
+                "Selección de Quesos: Maridaje de quesos maduros y frescos.",
+                "Texturas: Preparación de colaciones (buñuelos, pandebono) de alta calidad.",
+                "Servicio: Montaje por capas para la experiencia 'Evolución'."
             ]
         },
         "lessons": [
@@ -194,9 +234,17 @@ SECTIONS = [
         "emoji": "📦",
         "mooc": {
             "intro": "El empaque es la cara de tu marca. Aprende a seleccionar materiales biodegradables que protejan tu chocolate y cuenten la historia de sostenibilidad de tu emprendimiento.",
+            "recipe_url": "/recipes/manual_empaques_sostenibles.pdf",
             "schedule": [
                 {"period": "Mes 1: Materiales", "morning": "08:00 - 12:00 (Fibras Naturales)", "afternoon": "14:00 - 18:00 (Certificaciones FSC)"},
                 {"period": "Mes 2: Diseño de Marca", "morning": "08:00 - 12:00 (Estructura Isotérmica)", "afternoon": "14:00 - 18:00 (Etiquetado Nutricional)"}
+            ],
+            "steps": [
+                "Análisis de Barrera: Prueba de permeabilidad de grasas y humedad.",
+                "Estructura: Diseño de troqueles sin pegamentos tóxicos.",
+                "Branding: Impresión con tintas vegetales sobre fibras de caña.",
+                "Certificaciones: Obtención de sellos FSC y compostabilidad.",
+                "Isotermia: Selección de gel pack y cajas para envío seguro."
             ]
         },
         "lessons": [
