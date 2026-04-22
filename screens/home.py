@@ -13,11 +13,9 @@ def show_mooc_info(page, section):
     mooc = section.get("mooc", {})
     
     def close_dlg(e):
-        dlg.open = False
-        page.update()
+        page.close(dlg)
 
     def download_recipe(e):
-        # In a real app, this would open the URL
         page.launch_url(mooc.get("recipe_url", "#"))
 
     # Schedule Section
@@ -83,16 +81,14 @@ def show_mooc_info(page, section):
                     style=ft.ButtonStyle(shape=ft.RoundedRectangleBorder(radius=8)),
                 ),
             ], tight=True, spacing=8, scroll=ft.ScrollMode.AUTO),
-            width=450,
+            width=400,
             max_height=500,
         ),
         bgcolor=BG_CARD,
         shape=ft.RoundedRectangleBorder(radius=RADIUS_LG),
     )
     
-    page.dialog = dlg
-    dlg.open = True
-    page.update()
+    page.open(dlg)
 
 
 def build_home_screen(page, on_start_lesson, on_toggle_lang):
