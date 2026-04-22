@@ -93,6 +93,7 @@ def build_home_screen(page, on_start_lesson, on_toggle_lang):
                     ),
                     width=56, height=56,
                     border_radius=RADIUS_FULL,
+                    bgcolor="#FFFFFF",
                     border=ft.border.all(2, ACCENT_ORANGE),
                     clip_behavior=ft.ClipBehavior.ANTI_ALIAS,
                     alignment=ft.alignment.center,
@@ -108,16 +109,20 @@ def build_home_screen(page, on_start_lesson, on_toggle_lang):
             
             # Logos Row
             ft.Container(
-                content=ft.Row([
-                    ft.Image(src="/swisscontact_logo.png", width=70, height=20, fit=ft.ImageFit.CONTAIN),
-                    ft.Container(width=1, height=14, bgcolor=BORDER_SUBTLE),
-                    ft.Image(src="/sec_logo.png", width=80, height=24, fit=ft.ImageFit.CONTAIN),
-                    ft.Container(width=1, height=14, bgcolor=BORDER_SUBTLE),
-                    ft.Image(src="/bogota_logo.png", width=80, height=24, fit=ft.ImageFit.CONTAIN),
-                    ft.Container(width=1, height=14, bgcolor=BORDER_SUBTLE),
-                    ft.Image(src="/caua_logo.png", width=40, height=20, fit=ft.ImageFit.CONTAIN),
-                ], spacing=12, alignment=ft.MainAxisAlignment.CENTER, vertical_alignment=ft.CrossAxisAlignment.CENTER),
-                padding=ft.padding.symmetric(horizontal=12, vertical=10),
+                content=ft.Column([
+                    ft.Row([
+                        ft.Image(src="/swisscontact_logo.png", width=90, height=24, fit=ft.ImageFit.CONTAIN),
+                        ft.Container(width=1, height=16, bgcolor=BORDER_SUBTLE),
+                        ft.Image(src="/caua_logo.png", width=50, height=24, fit=ft.ImageFit.CONTAIN),
+                    ], spacing=16, alignment=ft.MainAxisAlignment.CENTER, vertical_alignment=ft.CrossAxisAlignment.CENTER),
+                    ft.Container(height=8),
+                    ft.Row([
+                        ft.Image(src="/sec_logo.png", width=120, height=32, fit=ft.ImageFit.CONTAIN),
+                        ft.Container(width=16),
+                        ft.Image(src="/bogota_logo.png", width=120, height=32, fit=ft.ImageFit.CONTAIN),
+                    ], alignment=ft.MainAxisAlignment.CENTER, vertical_alignment=ft.CrossAxisAlignment.CENTER),
+                ], spacing=0, alignment=ft.MainAxisAlignment.CENTER),
+                padding=ft.padding.symmetric(horizontal=12, vertical=12),
                 border_radius=RADIUS_MD,
                 bgcolor="#FFFFFF", # White background for logos
                 border=ft.border.all(1, BORDER_SUBTLE),
