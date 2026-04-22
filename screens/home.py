@@ -167,19 +167,15 @@ def build_home_screen(page, on_start_lesson, on_toggle_lang):
             
             ft.Container(height=8),
             
-            # Logos Row
             ft.Container(
                 content=ft.Row([
-                    ft.Image(src="/swisscontact_logo.svg", width=90, height=24, fit=ft.ImageFit.CONTAIN),
-                    ft.Container(width=1, height=16, bgcolor=BORDER_SUBTLE),
-                    ft.Image(src="/bogota_logo.svg", width=120, height=32, fit=ft.ImageFit.CONTAIN),
-                    ft.Container(width=1, height=16, bgcolor=BORDER_SUBTLE),
-                    ft.Image(src="/bogota_logo.svg", width=120, height=32, fit=ft.ImageFit.CONTAIN),
-                ], spacing=20, alignment=ft.MainAxisAlignment.CENTER, vertical_alignment=ft.CrossAxisAlignment.CENTER),
+                    ft.Image(src="/swisscontact_logo.svg", width=120, height=32, fit=ft.ImageFit.CONTAIN),
+                ], spacing=0, alignment=ft.MainAxisAlignment.CENTER, vertical_alignment=ft.CrossAxisAlignment.CENTER),
                 padding=ft.padding.symmetric(horizontal=12, vertical=12),
                 border_radius=RADIUS_MD,
-                bgcolor="#FFFFFF", # White background for logos
+                bgcolor="#FFFFFF",
                 border=ft.border.all(1, BORDER_SUBTLE),
+                margin=ft.margin.symmetric(horizontal=40),
             ),
         ], spacing=0),
         padding=ft.padding.symmetric(horizontal=16, vertical=12),
