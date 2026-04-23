@@ -42,21 +42,28 @@ def main(page: ft.Page):
         if idx == 0:
             content_area.content = build_home_screen(page, start_lesson, on_toggle_lang)
         elif idx == 1:
-            content_area.content = build_achievements_screen(page)
+            # Merged Progress view: Achievements + Ranking
+            content_area.content = ft.Column([
+                ft.Tabs(
+                    selected_index=0,
+                    tabs=[
+                        ft.Tab(text=t("nav_achievements"), content=build_achievements_screen(page)),
+                        ft.Tab(text=t("nav_ranking"), content=build_leaderboard_screen(page)),
+                    ],
+                    expand=True,
+                )
+            ], expand=True)
         elif idx == 2:
             content_area.content = build_curriculum_view(page)
         elif idx == 3:
-            content_area.content = build_leaderboard_screen(page)
-        elif idx == 4:
             content_area.content = build_profile_screen(page)
 
         # Update nav labels
         nav = page.navigation_bar
         nav.destinations[0].label = t("nav_home")
-        nav.destinations[1].label = t("nav_achievements")
+        nav.destinations[1].label = "Progreso"
         nav.destinations[2].label = "Plan Dual"
-        nav.destinations[3].label = t("nav_ranking")
-        nav.destinations[4].label = t("nav_profile")
+        nav.destinations[3].label = t("nav_profile")
         page.update()
 
     def on_nav_change(e):
@@ -83,9 +90,8 @@ def main(page: ft.Page):
     page.navigation_bar = ft.NavigationBar(
         destinations=[
             ft.NavigationBarDestination(icon=ft.Icons.HOME_OUTLINED, selected_icon=ft.Icons.HOME, label=t("nav_home")),
-            ft.NavigationBarDestination(icon=ft.Icons.EMOJI_EVENTS_OUTLINED, selected_icon=ft.Icons.EMOJI_EVENTS, label=t("nav_achievements")),
+            ft.NavigationBarDestination(icon=ft.Icons.STAR_OUTLINE, selected_icon=ft.Icons.STAR, label="Progreso"),
             ft.NavigationBarDestination(icon=ft.Icons.MENU_BOOK_OUTLINED, selected_icon=ft.Icons.MENU_BOOK, label="Plan Dual"),
-            ft.NavigationBarDestination(icon=ft.Icons.LEADERBOARD_OUTLINED, selected_icon=ft.Icons.LEADERBOARD, label=t("nav_ranking")),
             ft.NavigationBarDestination(icon=ft.Icons.PERSON_OUTLINED, selected_icon=ft.Icons.PERSON, label=t("nav_profile")),
         ],
         on_change=on_nav_change,
