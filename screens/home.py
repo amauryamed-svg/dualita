@@ -89,6 +89,7 @@ def show_mooc_info(page, section):
     )
     
     page.open(dlg)
+    page.update()
 
 
 def build_home_screen(page, on_start_lesson, on_toggle_lang):
