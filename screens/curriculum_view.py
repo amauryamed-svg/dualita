@@ -17,11 +17,11 @@ def build_curriculum_view(page):
                     content=ft.Column([
                         ft.Text(item["period"], weight=ft.FontWeight.BOLD, color=ACCENT_ORANGE, size=13),
                         ft.Row([
-                            ft.Icon(ft.Icons.WB_SUNNY_OUTLINED, size=14, color=TEXT_SECONDARY),
+                            ft.Icon(ft.Icons.LIGHT_MODE, size=14, color=TEXT_SECONDARY),
                             ft.Text(item["morning"], size=11, color=TEXT_PRIMARY),
                         ], spacing=8),
                         ft.Row([
-                            ft.Icon(ft.Icons.NIGHTLIGHT_ROUNDED, size=14, color=TEXT_SECONDARY),
+                            ft.Icon(ft.Icons.NIGHTLIGHT, size=14, color=TEXT_SECONDARY),
                             ft.Text(item["afternoon"], size=11, color=TEXT_PRIMARY),
                         ], spacing=8),
                     ], spacing=2),
