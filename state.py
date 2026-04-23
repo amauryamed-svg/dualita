@@ -255,3 +255,11 @@ def check_achievements():
         unlock("lessons_10")
 
     save_state()
+
+
+def reset_state():
+    """Reset the entire user progress."""
+    global _state
+    _state = DEFAULT_STATE.copy()
+    save_state()
+    return _state
